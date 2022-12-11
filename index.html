@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Modern interior</title>
 </head>
+
 <body>
-  
+  <header>
+    <div class="header container">
+      <input type="checkbox" name="menu" id="menu" hidden>
+      <button class="this" href="">This Interior</button>
+      <a href="#open-menu" class="menu-hamburguer">
+        <span class="material-symbols-outlined">
+          menu
+        </span>
+      </a>
+      <nav class="nav">
+        <ul class="nav__items">
+          <li class="nav__item active"><a href="#">Home</a></li>
+          <li class="nav__item"><a href="#">Collection</a></li>
+          <li class="nav__item"><a href="#">About</a></li>
+          <li class="nav__item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="open-menu" class="modal-window">
+        <nav class="nav__mobile">
+          <ul class="nav__items--mobile">
+            <li class="nav__item active"><a href="#">Home</a></li>
+            <li class="nav__item"><a href="#">Collection</a></li>
+            <li class="nav__item"><a href="#">About</a></li>
+            <li class="nav__item"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="modal-close">
+          <span class="material-symbols-outlined">
+            close
+          </span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="main container">
+      <div class="main__content">
+        <div class="main__title">Modern interior</div>
+        <div class="main__text">A full-Service residential & commercial interior design and staging company offering
+          professional organizing & eco-services.</div>
+        <div class="main__read"><span>Read more</span> <span class="material-symbols-outlined">
+          trending_flat
+          </span></div>
+      </div>
+      <div class="main__design">
+        <img src="./photo1.png" alt="interior photo">
+        <div class="design__card">
+          <div class="designer">
+            <img src="./photo2.png" alt="aliza webber">
+            <div class="designer__desc">
+              <div class="designer__name">Aliza Webber</div>
+              <div class="designer__job">Interior designer</div>
+            </div>
+          </div>
+          <div class="card__content">
+            Designed in 2020 by Aliza Webber
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>created by <b>teseu</b> - devChallenges.io</footer>
 </body>
+
 </html>

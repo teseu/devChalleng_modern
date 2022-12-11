@@ -1,0 +1,259 @@
+body {
+  background: #181719;
+}
+.main {
+  min-height: 70vh
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  min-height: 2.5rem
+}
+.container {
+  padding: .5rem;
+}
+.this {
+  font-family: 'Crimson Pro';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #181719;
+  padding: .8rem .5rem;
+  height: inherit;
+}
+.material-symbols-outlined {
+  color: #FFF;
+  font-size: 2rem;
+}
+.nav {
+  display: none;
+}
+.nav__mobile {
+  di
+}
+.nav__items--mobile {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items: center;
+  list-style: none;
+}
+.nav__item {
+  padding: 2rem 1.2rem;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+
+}
+.nav__item a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+.nav__item.active a {
+  text-decoration: underline;
+  text-underline-offset: .5rem;
+  text-decoration-thickness: 4px;
+  font-weight: 700;
+}
+.main__title {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 46px;
+  color: #FFFFFF;
+  margin: .7rem 0
+}
+.main__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  margin: 1rem 0;
+  width: 70%;
+}
+.main__read {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: 20% 20%;
+  grid-template-rows: 3rem;
+  align-items: center;
+}
+.main__design > img {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.design__card {
+  background-color: #181719;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 300px;
+  height: 138px;
+  padding: 1rem;
+  position: absolute;
+  left: 80px;
+  top: 540px;
+}
+.designer {
+  display: flex;
+}
+.designer img {
+  background: #C4C4C4;
+  border-radius: 37px;
+  width: 62px;
+  height: 62px;
+  margin-right: 2rem;
+}
+.designer__name {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+.designer__job {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #828282;
+}
+.card__content {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+.modal-window {
+  position: fixed;
+  background-color: #181719;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.modal-window:target {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-window > nav {
+  width: 100vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  background: #181719;
+}
+
+
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 1.2rem;
+  width: 70px;
+  text-decoration: none;
+}
+.modal-close:hover {
+  color: black;
+}
+footer {
+  color: #BDBDBD;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .header,
+  .main {
+    max-width: 80vw;
+    margin: auto;
+  }
+  .main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+    min-height: 75vh;
+  }
+  .menu-hamburguer {
+    display: none;
+  }
+  .nav {
+    display: flex;
+  }
+  .nav__items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+    list-style: none;
+  }
+  .nav__item {
+    padding: 0 4rem;
+  }
+  .main__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main__title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 61px;
+  }
+  .main__text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .main__read {
+    grid-template-columns: 12% 10%;
+    font-size: 18px;
+  line-height: 22px;
+  }
+  .design__card {
+    width: 410px;
+    height: 189px;
+    left: 70vw;
+    top: 70vh;
+    padding: 1.5rem;
+  }
+  .card__content {
+    margin-top: 1rem;
+    font-size: 24px;
+    line-height: 31px;
+    width: 80%
+  }
+}
